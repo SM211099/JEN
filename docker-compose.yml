@@ -1,0 +1,14 @@
+version : "3.8"
+
+services :
+  web :
+    image : nginx
+    container_name : mynginx
+    ports :
+      - "80:80"
+    network : 
+      - shubham
+
+networks :
+  shubham :
+    driver: bridge
