@@ -15,9 +15,9 @@ pipeline {
       }
     }
 
-      stage ("Git") {
+      stage ("Compose") {
         steps {
-        sh "sudo git clone https://github.com/SM211099/JEN.git"
+        sh "sudo docker compose up"
 
       }  
     }
